@@ -4,15 +4,8 @@ const makeMap = () => {
   var map = new mapboxgl.Map({
     container: "map",
     style: "mapbox://styles/mapbox/light-v10",
-    center: [-118.52511096276204, 34.03758718678557],
-    zoom: 9.8,
-  });
-
-  deck.carto.setDefaultCredentials({
-    apiBaseUrl: "https://gcp-us-east1.api.carto.com",
-    apiVersion: deck.carto.API_VERSIONS.V3,
-    accessToken:
-      "eyJhbGciOiJIUzI1NiJ9.eyJhIjoiYWNfenRha201amQiLCJqdGkiOiJlNzA3MzBkZCJ9.hy-ibRwoB2um6m94-Qng_0GBxcGccRfVgxOwwbuQ_50",
+    center: [-75.17096222221605, 39.95641131210537],
+    zoom: 9.4,
   });
 
   return map;
