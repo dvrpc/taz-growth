@@ -17,7 +17,7 @@ const loadLayers = (map) => {
     source: "rail-lines",
     paint: {
       "line-opacity": 1,
-      "line-width": 2,
+      "line-width": 1.5,
     },
   });
 
@@ -27,7 +27,7 @@ const loadLayers = (map) => {
     source: "rail-stations",
     paint: {
       "circle-opacity": 1,
-      "circle-radius": 5,
+      "circle-radius": 4,
     },
   });
 
