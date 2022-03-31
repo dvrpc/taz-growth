@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Aaron Fraint - Solutions Engineer</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/deck.gl@^8.6.0/dist.min.js"></script>
+    <script src="https://unpkg.com/@deck.gl/carto@^8.6.0/dist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <div id="map">
+      <div id="spinner"></div>
+      <div id="floating-intro">
+        <h1>Growth at the TAZ level, 2020 - 2045</h1>
+        <p>
+          This web application visualizes growth in various factors between 2020
+          and 2045 at the traffic analysis zone (TAZ) level.
+        </p>
+
+        <div id="analysis-accordion" class="accordion">About this data</div>
+        <div id="about-analysis" class="panel">
+          <p>From DVRPC's long range plan</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

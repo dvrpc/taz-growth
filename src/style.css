@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#floating-intro {
+  position: absolute;
+  padding: 10px;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  width: 35vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.2);
+  max-height: 85vh;
+  overflow: scroll;
+}
+
+#floating-graphs {
+  position: absolute;
+  padding: 10px;
+  z-index: 0;
+  top: 10px;
+  right: 10px;
+  width: 20vw;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+p,
+ol li {
+  font-size: 14px;
+}
+
+#stats-results ul li {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.stats {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 4px;
+  border: none;
+  text-align: left;
+  outline: none;
+  /* transition: 0.4s; */
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+.accordion:after {
+  content: "\002B";
+  font-weight: bold;
+  float: right;
+  margin-right: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+#smallscreen-text {
+  display: none;
+  font-weight: bold;
+  color: red;
+  font-style: italic;
+}
+
+#code-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 600px) {
+  #smallscreen-text {
+    display: inline;
+  }
+}
