@@ -29,6 +29,15 @@ module.exports = {
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "./src/img",
+          to: "img",
+          toType: "dir",
+        },
+      ],
+    }),
   ],
 
   module: {

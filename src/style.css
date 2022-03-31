@@ -96,6 +96,18 @@ ol li {
   display: flex;
   justify-content: space-evenly;
 }
+
+#logo-box {
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  right: 20px;
+  width: 15vw;
+  min-width: 200px;
+}
+#logo-box img {
+  width: 100%;
+}
 @media only screen and (max-width: 600px) {
   #smallscreen-text {
     display: inline;

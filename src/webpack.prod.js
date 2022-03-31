@@ -22,6 +22,15 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "./src/img",
+          to: "img",
+          toType: "dir",
+        },
+      ],
+    }),
     new HtmlWebpackPlugin({
       title: "TAZ Growth",
       template: path.resolve(__dirname, "./index.html"),
