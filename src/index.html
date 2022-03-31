@@ -21,31 +21,34 @@
     <div id="map">
       <div id="spinner"></div>
       <div id="floating-intro">
-        <h1>Growth at the TAZ level, 2020 - 2045</h1>
+        <h1>TAZ Growth: 2020 - 2045</h1>
         <p>
-          This web application visualizes growth in various factors between 2020
-          and 2045 at the traffic analysis zone (TAZ) level.
+          This web map visualizes population and employment growth between 2020
+          and 2045 at the traffic analysis zone (TAZ) level in the DVRPC region.
         </p>
 
         <p>
-          Select a variable to visualize:
+          Select a variable & visualization method:
           <select name="variable" id="variable">
-            <option value="population">Population</option>
-            <option value="total_employment">Employment</option>
-          </select>
-        </p>
-
-        <p>
-          Select visualization method:
-          <select name="visual" id="visual">
-            <option value="total">Total values</option>
-            <option value="pct">Percent change</option>
+            <option value="total population">Total change in Population</option>
+            <option value="pct population">% change in Population</option>
+            <option value="total employment">Total change in Employment</option>
+            <option value="pct employment">% change in Employment</option>
           </select>
         </p>
 
         <div id="analysis-accordion" class="accordion">About this data</div>
         <div id="about-analysis" class="panel">
-          <p>From DVRPC's long range plan</p>
+          <p>
+            DVRPC's
+            <a href="https://www.dvrpc.org/plan" target="_blank"
+              >Long Range Plan</a
+            >
+            identifies population and employment forecasts for every 5th year
+            between 2015 and 2050. This map highlights the total and percent
+            change in population and employment between 2020 and 2045 at the TAZ
+            level, with an overlay of SEPTA's Regional Rail network.
+          </p>
         </div>
       </div>
     </div>
